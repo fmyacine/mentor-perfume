@@ -6,7 +6,7 @@ body{
 }
 
 .carousel{
-    margin: 4.5% auto 0;
+    margin: 3.5% auto 0;
     background-color: whitesmoke;
     width: 55%;
     height: 90%;
@@ -14,9 +14,9 @@ body{
 }
 
 .carousel img{
-    
-    width: 100%;
-    height: 100%;
+    float: left;
+    width: 50%;
+    height: 40%;
     border-radius: 2% 0 0 2%;
     
 }
@@ -25,14 +25,15 @@ body{
 .text{
     
     text-align: left;
+    margin-left:20px;
 }
 .text h5{
     
     color: rgb(182, 179, 179);
     font-family: 'Montserrat';
     font-weight: 700;
-    padding: 35px 0 20px;
-    letter-spacing: 3px;
+    padding: 40px 0 20px;
+    letter-spacing: 10px;
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -47,12 +48,13 @@ body{
     font-family: "Montserrat";
     color:gray;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 .price{
     font-family: "Fraunces";
     color: hsl(158, 36%, 37%);
     font-size: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     position: relative;
 }
 span{
@@ -84,4 +86,41 @@ svg{
 
 .add:hover{
     background: hsl(159, 47%, 24%) ;
+}
+@media only screen and (max-width : 600px ) {
+    .carousel{
+        width: 80%; 
+        height: 80%; 
+        
+        
+    }
+    .carousel img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3% 3% 0 0;
+    }
+    .price{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .add{
+        margin-bottom: 30px;
+    }
+    .text h5{
+        padding-top: 30px;
+    }
+    .text h2{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .add{
+        width: 60%;
+    }
+    .text p{
+        margin-bottom: 10px;
+    }
+    span{
+        top: 13px;
+    }
 }
