@@ -53,12 +53,15 @@ body{
     color: hsl(158, 36%, 37%);
     font-size: 50px;
     margin-bottom: 10px;
+    position: relative;
 }
 span{
     padding-left: 40px;
     color:rgb(182, 179, 179);
     font-size: 14px;
     text-decoration: line-through;
+    position: absolute;
+    top: 20px;
 }
 .add{
     margin: 0 auto;
